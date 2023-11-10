@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Count Character</title>
+</head>
+
+<body>
+
+    <div id="container">
+        <h1 id="title">Insert Characters</h1>
+        <input type="text" id="textbox">
+        <!-- <textarea id="textbox" cols="80" rows="15"></textarea> -->
+        <p id="charcount">Character Count: <span id="count">0</span></p>
+    </div>
+
+
+    <script>
+
+
+        function updateCount() {
+
+            
+            let textbox = document.getElementById("textbox");
+            let count = document.getElementById("count");
+            count.innerHTML = textbox.value.length;
+        }
+
+        textbox.oninput = updateCount;
+
+        count.oninput = updateCount;
+
+    </script>
+
+</body>
+
+</html>

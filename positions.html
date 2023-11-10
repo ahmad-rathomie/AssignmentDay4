@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Position</title>
+</head>
+
+<body>
+
+    <label>Insert Word</label>
+    <input type="text" id="a1">
+    <button onclick="getWordAt()">Count</button>
+    <p id="word"></p>
+
+
+
+    <script>
+
+        // used of .indexOf to find the sentence in position
+
+        function getWordAt(){
+
+const paragraph = document.getElementById("word").innerHTML = "I think Ruth's dog is cuter than your dog!";
+
+const searchTerm = document.getElementById("a1").value;
+const indexOfFirst = paragraph.indexOf(searchTerm);
+
+document.write(` The index of the first "${searchTerm}" is ${indexOfFirst}`);
+// Expected output: "The index of the first "dog" is 15"
+
+document.write(
+  ` The index of the second "${searchTerm}" is ${paragraph.indexOf(
+    searchTerm,
+    indexOfFirst + 1,
+  )}`,
+);
+// Expected output: "The index of the second "dog" is 38"
+  }
+
+    </script>
+</body>
+
+</html>

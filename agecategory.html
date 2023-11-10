@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age Category</title>
+</head>
+<body>
+
+    <label for="Enter Age">Enter your age :</label>
+    <input type="text" id="a1">
+    <button onclick="age()">Click</button>
+    
+
+
+    <script>
+
+        function age(){
+            
+            let cate;
+            cate = document.getElementById("a1").value;
+            if (cate <= 10 ) {
+              return alert("This person is children.");
+            } else if (cate <=19 ){
+                return alert ("This person is teenager");
+            } else if ( cate <=45){
+                return alert("This person is adult");
+            }else if (cate <=70){
+                return alert("This person is senior citizen");
+
+            }else {
+                return document.write("Very Senior").innerHTML;
+            }
+                
+            
+
+            
+        
+        }
+    
+ 
+        
+
+         
+        
+
+
+
+    //         let age;
+    //         age = parseInt(document.getElementById("a1").value);
+    //         if ( age >= 12 );{
+    //         alert("You are a child");
+    //     } else4
+    //      ( >=13){
+    //         alert("You are teenager");
+    //     }
+         
+    // }
+
+
+    </script>
+</body>
+</html>
