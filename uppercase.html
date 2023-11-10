@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uppercase</title>
+</head>
+<body>
+    <h1>Convert to UPPERCASE</h1>
+
+    <label>Fill the Sentence</label>
+    <input type="text" id="a1">
+    <button onclick="uppcase()">Convert</button><br>
+    <!-- <p id="Uppercase">Result :<span id="conv">0</span></p> -->
+    <!-- <label for="uppcase()">Result(x2):</label>
+    <input id="conv" type="text" name="" readonly> -->
+    <p>Result :<span id='conv'></span></p>
+
+    
+    
+
+
+
+    <script>
+        function uppcase(){
+            let sent,conv; 
+            
+            sent = (document.getElementById("a1").value);
+            conv = sent.toUpperCase();
+
+            document.getElementById("conv").innerHTML = conv;
+           
+            
+        }
+        
+
+
+
+    </script>
+    
+</body>
+</html>

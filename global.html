@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global Page</title>
+</head>
+
+<body>
+
+
+
+
+    <script>
+        let petName = 'Rocky' // Global variable
+        myFunction()
+
+        function myFunction() {
+            
+            fruit = 'apple'; // Considered global
+
+            document.write(typeof petName + ' - ' + 'My pet name is ' + petName )
+        }
+
+        document.write(
+            typeof petName + ' - ' + ' My pet name is ' +   petName + ' Fruit name is ' +   fruit)
+
+
+    </script>
+
+</body>
+
+</html>
